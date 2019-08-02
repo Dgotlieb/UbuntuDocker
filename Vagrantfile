@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     end
 	
    config.vm.network :forwarded_port, guest: 81, host: 81
-   config.vm.network :forwarded_port, guest: 80, host: 80
+   config.vm.network :forwarded_port, guest: 82, host: 82
    config.vm.network :forwarded_port, guest: 9000, host: 9000
    config.vm.network :forwarded_port, guest: 5000, host: 5000
 
