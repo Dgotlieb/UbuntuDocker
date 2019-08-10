@@ -4,6 +4,7 @@ Vagrant.configure("2") do |config|
         v.memory = 2048
         v.cpus = 2
     end
+   config.vm.synced_folder "./files", "/home/vagrant/files"
 	
    config.vm.network :forwarded_port, guest: 81, host: 81
    config.vm.network :forwarded_port, guest: 82, host: 82
